@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <head>
+        <title>Donar </title>
+        <link href="./img/volunteer-icon1.png" rel="icon" type="image/icon"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="libs/fontawesomepro/css/all.min.css" rel="stylesheet" type="text/css" /> 
+        <link href="css/donar.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+
+        <!-- Nav bar -->
+        <div class="contact-bar">
+
+            <div class="media">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+
+            <div class="contact">
+                <span><i class="fas fa-phone-alt"></i> +95-9123456789</span>
+                <span><i class="fas fa-envelope"></i> 1egroup@gmail.com</span>
+            </div>
+        </div>
+        <nav>
+            <div>
+                <i class="fad fa-seedling"></i>
+                <p>1E GROUP</p>
+            </div>
+
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="shopping.html">Shopping</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </nav>
+
+        <!-- donation text -->
+
+        <div class="donation-text">
+            <h2>Donations that Change the world</h2>
+            <p>We've spent the last 5 years helping over 25,000 teams by donation to stop plastic pollution</p>
+        </div>
+
+        <div class="donar-text">
+            <h2>You can help less of plastic pollution by
+                <strong>Donating</strong> little</h2>
+        </div>
+        <!-- donation,animal,volunteer box -->
+
+        <div class="all-contain">
+            <div class="p-donation all">
+                <div class="p-image"></div>
+                <div class="p-content content-all">
+                    <p>$5,0000 of <span>$1,00000</span> raised</p>
+                    <progress id="progress" value="50" max="100">100%</progress class="p-progress">
+                    <label for="p-donation" class="p-label label">Plastic donation</label>
+                    <a href="#" class="all-a"><button class="p-button all-button">fill form for plastic pollution</button></a>
+                </div>
+            </div>
+
+            <div class="animal-donation all">
+                <div class="a-image"></div>
+                <div class="animal-content content-all">
+                    <p>$3,5000 of <span>$1,00000</span> raised</p>
+                    <progress id="progress" value="35" max="100">100%</progress class="a-progress">
+                    <label for="p-donation" class="a-label label">Animal donation</label>
+                    <a href="#" class="all-a"><button class="a-button all-button">fill form for animal donation </button></a>
+                </div>
+            </div>
+
+            <div class="total-volunteer all">
+                <div class="v-image"></div>
+                <div class="volunteer-content content-all">
+                    <p>$2,5000 of <span>$1,00000</span> raised</p>
+                    <progress id="progress" value="25" max="100">100%</progress class="a-progress">
+                    <label for="v-label" class="v-label label">Volunteer campaign</label>
+                    <a href="./volunteer.html" class="all-a"><button class="v-button all-button">fill form for volunteer</button></a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- donation logo and form -->
+        <div class="d-logo">
+            <img src="./img/donar.jpg" alt="donate" class="d-logo1">
+        </div>
+
+        <!-- payformat -->
+        <div class="d-pay">
+            <h1>Easy Donation Form</h1>
+            <span><i class="fab fa-paypal fa-fw fa-spin"></i> pay<span style="color:#3088fc">pal/</span></span>
+            <span><i class="far fa-credit-card-blank fa-spin"></i> credit card/</span>
+            <span><i class="fas fa-envelope-open-dollar fa-spin"></i> bank transfer</span>
+            <p>...With Recurring Payment Type</p>
+        </div>
+
+        <!-- donation form -->
+        <div class="donation-form">
+            <div class="d-head">
+                <h3>DONATION Form</h3>
+            </div>
+            <div class="d-form">
+                <form action="" method="" class="donation-form-gp">
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="" selected disabled>CAN-Canadian Dollar</option>
+                            <option value="">English $</option>
+                            <option value="">Canada &capand; </option>
+                            <option value="">Singapore $</option>
+                            <option value="">Europe $</option>
+                        </select>
+                    </div>
+
+                    <div class="dollar-custom">
+                        <p>How much would you like to donate?</p>
+                        <input type="checkbox" id="dollar" value=""/>
+
+                        <label for="dollar" class="dollar" >$5</label>
+
+                        <input type="checkbox" class="dollar" id="dollar" value="$1"/>
+                        <label for="dollar" class="dollar" >$10</label>
+
+                        <input type="checkbox" class="dollar" id="dollar" value="$1"/>
+                        <label for="dollar" class="dollar" >$15</label>
+
+                        <input type="checkbox" class="dollar" id="dollar" value="$1"/>
+                        <label for="dollar" class="dollar" >Custom</label>
+                    </div>
+
+                    <div class="payment-type">
+                        <p>PAYMENT TYPE</p>
+                        <button class="payment-button pb1">Recurring</button>
+                        <button class="payment-button pb2">One Time Payment</button>
+                    </div>
+
+                    <div class="payment-option">
+                        <p>Select the payment option</p>
+                        <button class="payment-options ob1">Credit Card</button>
+                        <button class="payment-options ob2">Bank Transfer</button>
+                        <button class="payment-options ob3">Pay Pal</button>
+                    </div>
+
+                    <div class="card">
+                        <label for="card">Enter your 16-digit card number </label>
+                        <input type="number" id="card" class="card1" placeholder="xxxx-xxxx-xxxx-xxxx"/>
+                        <i class="fab fa-cc-visa fa-2x fa-fw"></i>
+                    </div>
+
+                    <div class="plastic-animal">
+                        <label for="Animal">For animal donation</label>
+                        <input type="checkbox" id="animal" class="a-choice"/>
+
+                        <label for="Plastic pollution" class="p-label">For Plastic pollution donation</label>
+                        <input type="checkbox" id="animal" class="a-choice"/>
+                    </div>
+
+                    <div class="personal-details">
+                        <p class="p-details">Personal Details</p>
+                        <div class="f&l detail">
+                            <input type="text" class="fname input" placeholder="FirstName"/>
+                            <input type="text" class="fname input" placeholder="LastName"/>
+                        </div>
+
+                        <div class="e&p detail">
+                            <input type="text" class="email input" placeholder="EmailAddress" required/>
+                            <input type="number" class="ph input" placeholder="PhoneNumber" required/>
+                        </div>
+
+                        <div class="address detail">
+                            <input type="text" class="address input" placeholder="Address"/>
+                        </div>  
+
+                        <div class="textarea detail">
+                            <textarea id="note" class="note" rows='3' cols="100" placeholder="Additional Note"></textarea>
+                        </div>
+
+                        <div class="b-donate">
+                            <button class="button-donate">Donate</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- about donation campaign footer-->
+        <div class="alldonation">
+            <h3 class="say">What We say about donation campaing</h3>
+            <div class="translation">
+                <p id="translate" class="explain">We are a non-profit organization. You will not get your chance cause we have only given to others not taken from one. But we surely say you must gain be happy, healthy, and united.</p>
+                <button onclick="english()">English</button>
+                <button onclick="translation()">Burmese</button>
+
+
+            </div>
+
+            <div class="d-group">
+                <div class="savings donation-group">
+                    <img src="./img/savings.png">
+                    <span>25,008+ <br/><a href="./donar.html">donation complete</a> </span>
+                </div>
+
+                <div class="people donation-group">
+                    <img src="./img/volunteer.png">
+                    <span>3,771+ <br/><a href="./volunteer.html">total volunteers</a></span>
+                </div>
+
+                <div class="animal donation-group">
+                    <img src="./img/crab.png">
+                    <span>1,007+ <br/><a href="./donar.html">animal donation</a></span>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="./js/volunteer.js">
+           
+        </script>
+    </body>
+</html>

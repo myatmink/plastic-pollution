@@ -1,0 +1,709 @@
+/* ----- CSS nav bar code ----- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root{
+    --ff: sans-serif;
+    --fm:'Montserrat', sans-serif;
+    --fm1:'Montserrat Alternates', sans-serif
+}
+
+body{
+    margin:0;
+}
+
+.contact-bar{
+    font-family: sans-serif;
+    height: 2.7em;
+    background-color: #333;
+    color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.media{
+    width: 15%;
+    font-size: 1.5em;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-left: 2em;
+}
+
+.contact{
+    width: 40%;
+    font-size: 1.2em;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact span{
+    letter-spacing: 2px;
+    border-right: 2px solid #fff;
+    padding-right: 10px;
+}
+
+.contact span:last-child{
+    border: none;
+}
+
+nav{
+    height: 70px;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+nav > div i{
+    font-size: 2em;
+}
+
+nav > div p{
+    font-family: 'Montserrat Alternates', sans-serif;
+    display: inline-block;
+    font-size: 1.5em;
+    color: #444;
+}
+
+nav ul{
+    width: 60%;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #222;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul li:last-child a{
+    color: #fff;
+    background-color: #98BAE7;
+    border-radius: 5px;
+    border: 2px solid #98BAE7;
+
+    padding: 10px 20px;
+
+    transition: all 0.3s;
+}
+
+nav ul li a:hover{
+    color: #98BAE7;
+    
+}
+
+nav ul li:last-child a:hover{
+    color:#000;
+    border: 1px solid #222;
+}
+
+nav ul li:first-child a{
+    color: #98BAE7;
+}
+
+/* volunteer box */
+.volunteer-box{
+    width:100%;
+    height:500px;
+}
+
+.v-image .img{
+    width:750px;
+    height:450px;
+
+    object-fit:cover;
+}
+
+.v-image{
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.v-text{
+    position:relative;
+    
+}
+
+.v-text .v-volunteer{
+    width:320px;
+    height:80px;
+    background-color:#98BAE7;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    border-radius: 20px;
+
+    padding:0 0 15px 15px;
+
+    font-family:var(--ff);
+
+    transform: translate(-140%, -110%) rotate(-15deg);
+
+    animation: volunteer 1.8s forwards 1s;
+
+    opacity: 0;
+
+}
+
+.v-text h3{
+    color:#b922ff;
+
+    font-size:22px;
+    letter-spacing:1px;
+
+    text-transform:capitalize;
+
+    margin:0;
+    padding-top:22px;
+}
+
+.v-text p{
+    font-family: 'Arial', sans-serif;
+    font-weight:lighter;
+    font-size:18px;
+    color:#fff;
+    cursor:pointer;
+
+    margin-top:5px;
+
+}
+
+.video{
+    border:10px solid #98bae796;
+    border-radius:15px;
+    
+    position:absolute;
+    
+    top:0;
+    left:0;
+
+    transition:all 1.4s;
+    opacity: 0;
+    
+    animation: volunteer-video 2s linear 1.4s forwards;
+
+}
+
+/* v-volunteer */
+@keyframes volunteer{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/* volunteer video */
+@keyframes volunteer-video{
+    0%{
+        top:0;
+        left:0;
+
+        opacity: 0;
+    }
+
+    50%{
+        top:-310%;
+        left:150%;
+        opacity: 0;
+    }
+
+    100%{
+        top:-300%;
+        left:150%;
+
+        opacity: 1; 
+
+    }
+}
+
+/* volunteer boy and girl */
+.volunteer-gb{
+    width:100%;
+
+    background-color: #bcd6f848;
+
+    clip-path: polygon(33% 0, 49% 2%, 66% 0, 82% 2%, 100% 0, 100% 100%, 0 100%, 0 0, 17% 2%);
+
+}
+
+/* text of volunteer-gp */
+/* ourvolunteer */
+
+.vol{
+    font-family: var(--ff);
+    margin-top: 50px;
+    margin-left: 50px;
+
+    display: inline-block;
+}
+
+.content{
+    width:19%;
+    font-family:Arial;
+
+    margin-top:15px;
+    margin-left: 48px;
+
+}
+
+.content h2{
+    margin:0;
+    padding:5px 5px;
+    font-size:30px;
+}
+
+.content h2::before{
+    content:'Volunteers';
+    background-color: #F3950D;
+}
+
+/* box image span i */
+
+.gb{
+    width:100%;
+    height:350px;
+    margin-top:50px;
+
+    display:flex;
+    justify-content:center;
+}
+
+/* image span i */
+
+.box{
+    width:18%;
+    height:280px;
+
+    margin-left:40px;
+}
+
+/* image only */
+.gb .gb1{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+    border-radius:30px;
+}
+
+/* image text span-icon i*/
+.box .span-icon{
+    width:88%;
+    height:50px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+
+    /* clip-path: polygon(0 0, 100% 22%, 100% 100%, 0% 100%); */
+
+    border-radius: 0 0 30px 30px;
+
+    display: flex;
+    align-items: center;
+
+    color:#fff;
+
+    padding:10px 15px;
+
+    transform: translateY(calc(-99% - 5px));
+
+    position:relative;
+}
+
+.span-icon1::before, .span-icon1::after,
+.span-icon2::before, .span-icon2::after,
+.span-icon3::before, .span-icon3::after,
+.span-icon4::before, .span-icon4::after{
+    content:'co-founder';
+    width:100%;
+    height: 50%;
+
+    font-family: sans-serif;
+    font-size: 23px;
+
+    transform:translateX(-200px);
+    
+    position:absolute;
+    bottom:-35px;
+    left:0;
+
+    color:#000;
+
+    transition: all 0.8s;
+
+    opacity: 0;
+
+}
+
+.span-icon1::after,
+.span-icon2::after,
+.span-icon3::after,
+.span-icon4::after {
+    content: 'Australia';
+
+    bottom:-70px;
+
+    font-size: 20px;
+    font-weight:normal;
+
+    opacity: 0;
+
+}
+
+.span-icon1:hover::before,
+.span-icon2:hover::before,
+.span-icon3:hover::before,
+.span-icon4:hover::before {
+    bottom:-35px;
+    transform:translateX(0);
+
+    overflow:visible;
+
+    opacity: 1;
+
+}
+
+.span-icon2:hover::before{
+    content: 'Director';
+}
+
+.span-icon2:hover::after{
+    content: 'Spain';
+}
+
+.span-icon3:hover::before{
+    content: 'HOD';
+}
+
+.span-icon3:hover::after{
+    content: 'Vietnam';
+}
+
+.span-icon4:hover::before{
+    content: 'Manager';
+}
+
+.span-icon4:hover::after{
+    content: 'Russia';
+}
+
+.span-icon1:hover::after,
+.span-icon2:hover::after,
+.span-icon3:hover::after,
+.span-icon4:hover::after{
+    transform:translateX(0);
+    opacity: 1;
+    transition-delay:0.5s ;
+}
+
+.span-icon span{
+    letter-spacing:1px;
+}
+
+.span-icon i{
+    width:25px;
+    height:22px;
+
+    font-size: 16px;
+    border:1px solid #fff;
+    border-radius: 13px;
+    transform: translateX(80px);
+
+    padding:4px 10px;
+    text-align: center;
+    line-height: 22px;
+}
+
+.span-icon1{
+    background-color: #6B4F4Fcc;  
+}
+
+.span-icon2{
+    background-color: #89B5AFee;
+}
+
+.span-icon3{
+    background-color: #FF9999ee;
+}
+
+.span-icon4{
+    background-color: #4E9F3Dcc;
+}
+
+.span-icon4 i.fad{
+    transform: translateX(120px);
+}
+
+/* volunteer form */
+
+/* volunteer heading */
+.v-heading{
+    font-family:Arial;
+    margin-top:35px;
+    text-align:center;
+}
+
+.v-p{
+    margin:0;
+    font-size:2rem;
+    color:#396EB0;
+    padding:15px;
+}
+
+.v-p1{
+    margin:0;
+    font-size:1.5rem;
+    color:#396EB0;
+}
+
+/* Contact Form */
+.form-gp{
+    width:80%;
+    height:700px;    
+    margin:20px auto;
+
+    background-image: url('./../img/from2.svg');
+    background-size: 60% 60%;
+    background-position: 250px 50px;
+    background-repeat: no-repeat;
+    
+
+    /* transform: rotate(-180deg); */
+
+    padding: 20px 50px;
+}
+
+.f-heading{
+    letter-spacing: 1px;
+    font-family:var(--fm);
+    text-transform:uppercase;
+    font-size:19px;
+}
+
+.form-gp .form{
+    width:50%;
+    height:50px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+
+    line-height:50px;
+
+    margin-top:5px;
+
+    border-top: 1px solid #FF5403;
+}
+
+/* input type */
+.form-gp input{
+    border:0;
+    background-color: transparent;
+}
+
+.form-gp .forms{
+    width:30%;
+    height:25px;
+    border-left: 1px solid #FF5403;
+    margin-left: 20px;
+
+    outline:none;
+
+}
+
+/* all div name  */
+.form{
+    font-weight: bold;
+    letter-spacing:1px;
+}
+
+/* username and email and their input*/
+
+.forms.u-email{
+    margin-left: 17px;
+
+}
+
+/* gender */
+.form.gender{
+    padding-top:5px;
+}
+
+/* label from male and female */
+.gender .mf{
+    display: inline-block;
+
+}
+
+.gender input[type="radio"]{
+    width:20px;
+    height:15px;
+    margin-left:10px;
+    
+}
+
+/* Tell us who you are */
+.form.tell-us{
+    /* width:40%; */
+    height:200px;
+    line-height: 25px;
+    padding-top: 10px;
+}
+
+.tell-us .tell1{
+    
+    font-weight: normal;
+
+    text-transform:none;
+    letter-spacing:0;
+}
+
+/* Text area */
+.form.message{
+    margin-top:20px;
+    border-style: none;
+
+}
+
+.msg{
+    width:500px;
+    height:130px;
+    font-size: 17px;
+
+    color:#fff;
+    background-color: #396fb08a;
+    border-radius:5px;
+
+    outline: none;
+}
+
+.button{
+    margin-top: 97px;
+}
+
+.send{
+    text-decoration: none;
+    border:1px solid #396EB0;
+    border-radius: 5px;
+    color:#396EB0;
+    padding:5px 5px;
+}
+
+.send i{
+    color:#396EB0;
+}
+
+/* donation footer complete */
+.alldonation{
+    width:100%;
+    /* height:300px; */
+    background:url(./../img/donation2.svg), #494b47e3;
+    /* background-image:url(./../img/donate.jpg); */
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:right;
+    /* background-attachment:fixed; */
+    /* position:sticky; */
+
+    color:#fff;
+    font-family: sans-serif;
+}
+
+.alldonation .say{
+    font-size: 1.6rem;
+    margin: 0;
+    padding-top: 55px;
+    text-align: center;
+    color:#eee;
+    text-shadow:5px -5px 13px #222;
+    text-transform:capitalize;
+    
+}
+
+.translation{
+    /* background-color:red; */
+    width: 50%;
+    margin: 20px auto 0px
+}
+
+.translation p{
+    margin:0;
+    padding:10px;
+    text-align:center;
+    font-style:italic;
+    font-size:1.2rem;
+    background-color:#2b2b2b98;
+}
+
+.translation button{
+    background-color:#2b2b2b98;
+    color: #eee;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+    margin: 5px auto 0px;
+    /* display: block; */
+    cursor: pointer;
+}
+
+.translation button:active{
+    color:#fff;
+}
+
+.d-group{
+    width:90%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:10px auto 0px;
+    padding:20px;
+    
+}
+
+.donation-group{
+    width:20%;
+    height:50px;
+    display:flex;
+
+    padding:5px;
+    margin-left: 10px;
+}
+
+/* image icon */
+.donation-group img{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+
+}
+
+.people img{
+    background-color:#222;
+}
+
+.donation-group span{
+    margin-left:10px;
+}
+
+.donation-group a{
+    color:#fff;
+}
